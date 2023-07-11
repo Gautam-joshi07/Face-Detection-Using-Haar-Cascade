@@ -11,7 +11,7 @@ def draw_boundary(img, classifier, scaleFactor,minNeighbor,color,text):
 
         # draw bounding box for detecting face
         cv2.rectangle(img,(x,y),(x+w,y+h),color,2)
-        # it will put the text above the bounding box on x axis
+        # it will put the text above the bounding box 
         cv2.putText(img,text,(x,y-5),cv2.FONT_HERSHEY_SIMPLEX,0.8,color,1,cv2.LINE_AA)
         coords = [x,y,w,h]
 
